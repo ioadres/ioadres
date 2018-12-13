@@ -1,32 +1,60 @@
 ﻿using System;
-using Xamarin.Forms;
+using ioadres.Core.Component.Core;
+using ioadres.Core.Component.Hello;
+using Prism;
 using Xamarin.Forms.Xaml;
+using Prism;
+using Prism.Ioc;
+using Prism.Unity;
+using Xamarin.Forms;
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace ioadres.Core
 {
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
 
-            MainPage = new MainPage();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class App : PrismApplication
+    {
+        public App(IPlatformInitializer initializer = null) : base(initializer) {
+
+        }
+
+        protected override async void OnInitialized()
+        {
+            try
+            { 
+                InitializeComponent();
+
+                await NavigationService.NavigateAsync(PageRoutes.GetKey<HelloPage>());
+            } catch(Exception e)
+            {
+
+            }
+        }
+
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+            //# Container Services
+            //ServicesLoader.Load(containerRegistry);
+
+            //# Container Components
+            containerRegistry.RegisterForNavigation<HelloPage>();
+            PageRoutes.AddKey<HelloPage>($"/{nameof(HelloPage)}");
+
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            base.OnStart();
         }
 
         protected override void OnSleep()
         {
-            // Handle when your app sleeps
+            base.OnSleep();
         }
 
         protected override void OnResume()
         {
-            // Handle when your app resumes
+            base.OnResume();
         }
     }
 }

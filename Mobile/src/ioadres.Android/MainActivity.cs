@@ -7,6 +7,8 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using ioadres.Core;
+using Prism;
+using Prism.Ioc;
 
 namespace ioadres.Droid
 {
@@ -20,7 +22,14 @@ namespace ioadres.Droid
 
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            LoadApplication(new App());
+            LoadApplication(new ioadres.Core.App(new AndroidInitializer()));
+        }
+    }
+
+    public class AndroidInitializer : IPlatformInitializer
+    {
+        public void RegisterTypes(IContainerRegistry containerRegistry)
+        {
         }
     }
 }
