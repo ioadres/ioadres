@@ -1,0 +1,37 @@
+
+.with-bg-image {
+    background-image: url('/assets/bgdesktop.jpg');
+    background-size: cover;
+}
+
+.is-256x256 {
+    width: 256px;
+    height: 256px;
+}
+
+.circular-square {
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+
+.title {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: lighter;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body{
+    align-items: inherit
+}
+
+.social-list {
+    font-size: 28px;
+}
