@@ -38,128 +38,41 @@
     <div class="container">
         <br>
         <div class="columns">
-            <div class="column is-2">               
+                <div class="column is-2"></div>
+            <div class="column is-2" *ngFor="let item of TechsRow1; let i = index">               
                 <div class="card">
                     <div class="card-image">
                             <figure class="image is-4by3">
-                                    <img src="/assets/angular.png" alt="Placeholder image">
+                                    <img [src]="item" alt="Placeholder image">
                             </figure>
                     </div>
                 </div>
-            </div>
-
-            <div class="column is-2">               
-                <div class="card">
-                    <div class="card-image">
-                            <figure class="image is-4by3">
-                                    <img src="/assets/vue.png" alt="Placeholder image">
-                            </figure>
-                    </div>
-                </div>
-            </div>       
-            
-            <div class="column is-2">               
-                <div class="card">
-                    <div class="card-image">
-                            <figure class="image is-4by3">
-                                    <img src="/assets/netcore.jpg" alt="Placeholder image">
-                            </figure>
-                    </div>
-                </div>
-            </div>        
-
-            <div class="column is-2">               
-                <div class="card">
-                    <div class="card-image">
-                            <figure class="image is-4by3">
-                                    <img src="/assets/netframework.png" alt="Placeholder image">
-                            </figure>
-                    </div>
-                </div>
-            </div>   
-
-            <div class="column is-2">               
-                    <div class="card is-danger">
-                        <div class="card-image">
-                                <figure class="image is-4by3">
-                                        <img src="/assets/xamarin.png" alt="Placeholder image">
-                                </figure>
-                        </div>
-                    </div>
-                </div>   
+            </div>            
         </div>
 
-
         <div class="columns">
-                <div class="column is-2">               
+                <div class="column is-2" *ngFor="let item of TechsRow2; let i = index">               
                     <div class="card">
                         <div class="card-image">
                                 <figure class="image is-4by3">
-                                        <img src="/assets/git.png" alt="Placeholder image">
-                                </figure>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="column is-2">               
-                    <div class="card">
-                        <div class="card-image">
-                                <figure class="image is-4by3">
-                                        <img src="/assets/tfs.png" alt="Placeholder image">
+                                        <img [src]="item" alt="Placeholder image">
                                 </figure>
                         </div>
                     </div>
                 </div>            
-
-                <div class="column is-2">               
-                        <div class="card">
-                            <div class="card-image">
-                                    <figure class="image is-4by3">
-                                            <img src="/assets/c.png" alt="Placeholder image">
-                                    </figure>
-                            </div>
-                        </div>
-                    </div>      
-                    <div class="column is-2">               
-                            <div class="card">
-                                <div class="card-image">
-                                        <figure class="image is-4by3">
-                                                <img src="/assets/js.png" alt="Placeholder image">
-                                        </figure>
-                                </div>
-                            </div>
-                        </div>            
-                        <div class="column is-2">               
-                                <div class="card">
-                                    <div class="card-image">
-                                            <figure class="image is-4by3">
-                                                    <img src="/assets/sass.png" alt="Placeholder image">
-                                            </figure>
-                                    </div>
-                                </div>
-                            </div>            
             </div>
-
+        
             <div class="columns">
-                    <div class="column is-2">               
-                        <div class="card">
-                            <div class="card-image">
-                                    <figure class="image is-4by3">
-                                            <img src="/assets/mysql.jpg" alt="Placeholder image">
-                                    </figure>
-                            </div>
+                    <div class="column is-4"></div>
+                <div class="column is-2" *ngFor="let item of TechsRow3; let i = index">               
+                    <div class="card">
+                        <div class="card-image">
+                                <figure class="image is-4by3">
+                                        <img [src]="item" alt="Placeholder image">
+                                </figure>
                         </div>
                     </div>
-        
-                    <div class="column is-2">               
-                        <div class="card">
-                            <div class="card-image">
-                                    <figure class="image is-4by3">
-                                            <img src="/assets/sqls.png" alt="Placeholder image">
-                                    </figure>
-                            </div>
-                        </div>
-                    </div>       
-                </div>
+                </div>            
+            </div>       
     </div>
 </section>
