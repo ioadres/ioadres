@@ -3,5 +3,5 @@
         ".vscode{,/**}"
     ],
     "appService.defaultWebAppToDeploy": "/subscriptions/02159038-898b-4d73-b5e7-f58e3f2ab699/resourceGroups/ioadres/providers/Microsoft.Web/sites/ioadres",
-    "appService.deploySubpath": "dist/ioadres"
+    "appService.deploySubpath": "dist\\ioadres"
 }

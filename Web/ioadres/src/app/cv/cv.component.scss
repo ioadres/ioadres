@@ -1,9 +1,8 @@
 
 .with-bg-image {
-    background-image: url('/assets/bgdesktop.jpg');
+    background-image:  linear-gradient(rgba(0, 209, 179, 0.4), rgba(210, 0, 87, 0.4)), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('/assets/bgdesktop.jpg');
     background-size: cover;
 }
-
 .is-256x256 {
     width: 256px;
     height: 256px;
@@ -22,18 +21,21 @@
 
 
 .title {
-    font-size: 28px;
-    line-height: 1;
+    color:#ffffff;
+    font-size: 25px;
+    line-height: 2;
     font-weight: lighter;
     font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+.subtitle {color:#ffffff;}
 
 .hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body{
     align-items: inherit
 }
 
-.social-list {
+i{
     font-size: 28px;
+    color:#ffffff;
 }
 
 .card-image {
